@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
+
         btn_anadir = findViewById(R.id.btnanadir);
         btn_anadir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,CreateActivity.class);
                 startActivity(intent);
             }
+        });
+
+        //Lista
+        btn_contacto = findViewById(R.id.btncontac);
+        btn_contacto.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ListActivity.class);
+            startActivity(intent);
         });
 
 
